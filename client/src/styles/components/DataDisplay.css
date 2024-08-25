@@ -1,0 +1,33 @@
+.data-display {
+    margin-bottom: 20px;
+}
+
+.data-row {
+    display: flex;
+    padding: 8px 0;
+    align-items: center;
+}
+
+.data-row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.data-row:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.header {
+    font-weight: bold;
+    background-color: #f1f1f1;
+    border-bottom: 2px solid #ccc;
+}
+
+.data-cell {
+    flex: 1;
+    padding: 8px;
+    text-align: left;
+}
+
+.data-display.cumulative .data-row .data-cell {
+    flex: 1 1 20%;
+}
